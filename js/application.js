@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
+    //Calculate the hash value
     var md5 = function (value) {
         return CryptoJS.MD5(value).toString();
     }
 
+    //Generate the identicon on key up event
     $(".dynamicInput").keyup(function () {
         var value = $(this).val(),
             hash = md5(value);
@@ -13,6 +15,7 @@ $(document).ready(function () {
 
     });
 
+    //Generate the identicon on click of Generate Button
     $(".staticInputBtn").click(function () {
         var value = $(".staticInput").val();
         hash = md5(value);
