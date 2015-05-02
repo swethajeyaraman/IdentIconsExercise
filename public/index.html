@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Generate IdentIcons</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jdenticon-1.1.0.min.js" async></script>
+    <script src="js/application.js"></script>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+</head>
+<body>
+    <!-- Begin page content -->
+    <div class="container">
+        <div class="page-header">
+            <h1>IdentIcons</h1>
+            <blockquote>
+                <p>"An Identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy. The original Identicon was a 9-block graphic, and the representation has been extended to other graphic forms by third parties." - Wikipedia</p>
+            </blockquote>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <label>Enter text to dynamically generate IdentIcons</label>
+                <input type="text" class="form-control dynamicInput">
+                <br>
+                <div class="col-lg-offset-4">
+                    <canvas class="identShowDynamic" width="100" height="100" />
+                </div>
+            </div>
+            <div class="col-lg-5 col-lg-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Sample Login Panel - IdentIcons generated using username
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <input class="form-control staticInput" placeholder="Enter username or any text to generate identicon" />
+                            <br />
+                            <button class="btn btn-primary btn-block staticInputBtn">Generate</button>
+                            <br />
+                            <div class="col-lg-offset-4">
+                                <canvas class="identShow" width="150" height="150" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <a href="http://jdenticon.com/" target="_blank">References : Jdenticon | </a>
+            <a href="https://code.google.com/p/crypto-js/" target="_blank">Generate hash| </a>
+            <a href="http://en.wikipedia.org/wiki/Identicon" target="_blank">Wikipedia</a>
+            <p class="pull-right">-Swetha Jeyaraman</p>
+        </div>
+    </footer>
+</body>
+</html>

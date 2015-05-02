@@ -1,0 +1,257 @@
+﻿html, body 
+{
+    height: 100%;
+    margin: 0;
+}
+
+.cf_container {
+    margin-top:3%;
+    min-height:100%;
+    clear:both
+}
+
+#navbar li a
+{
+    color:#0094ff;
+    font-weight:bold;
+}
+
+.navbar-brand a{
+    color:red;
+}
+/*.cf_logoutLink, .cf_profileLink,.cf_startProjectLink{
+    visibility:hidden;
+}*/
+.cf_signup, .cf_login{
+    width:400px;
+	margin: 0 auto;      
+}
+.cf_loginErrorMessage, .cf_signupErrorMessage{
+    margin-left:2%;
+    color: red;
+    font-weight:bold;
+}
+
+.navbar-default{
+    background-color:rgba(0,0,0,0.6);
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    text-align:center;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    height:2.43em;
+    color:white;
+    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+}
+.navbar-default .navbar-brand .glyphicon{
+    font-size:large;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: rgba(232, 229, 229, 0.74);
+}
+#navbar li a {
+    text-align:center;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    height:2.43em;
+    color:white;
+    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+}
+
+#navbar li a:hover,
+#navbar li a:focus {
+    color: rgba(232, 229, 229, 0.74);
+}
+
+.cf_dashboardProject{
+    border: 4px solid #ffffff;
+    border-top: none;
+    border-bottom: none;
+    background:rgba(232, 229, 229, 0.74);
+}
+.cf_searchProject{
+    border: 4px solid #ffffff;
+    background:rgba(232, 229, 229, 0.74);
+}
+.cf_dashboardLink{
+    text-align:center;
+}
+.cf_dashboardName{
+    text-align:center;
+    font-weight:bold;
+    color:rgba(0,0,0,0.6);
+}
+.cf_dashboardTitle{
+    text-align:center;
+    font-size: 1em;
+    font-weight:bold;
+    font-style: normal;
+    line-height: 1;
+    height:2.43em;
+    color:rgba(0,0,0,0.6);
+}
+
+.cf_searchTags{
+    border: 4px solid #ffffff;
+    background:rgba(232, 229, 229, 0.74);
+}
+/*Project Profile*/
+.cf_projectCommented{
+    background-color:#f5f5f5;
+    border-left:6px solid #558abb;
+}
+
+.cf_projectPosted{
+    border-top:1px solid #f5f5f5;
+    border-left:6px solid #0094ff;
+}
+
+/*Project Profile Page*/
+.cf_projectTab .nav-tabs,
+.cf_projectTab .nav-tabs li
+{
+    border:0px;
+}
+
+/*.cf_projectChampion{
+    font-weight:bold;
+    position:relative;
+    margin-left:40%;
+}*/
+/*Dashboard*/
+.cf_dashboard{
+    background-color:white;
+    max-height:100%;
+    max-width:100%;
+}
+/*.cf_dashboard1{
+    height:300px;
+    border:outset;
+}*/
+/*Start project Page*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/*Author Profile Page*/
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+    /*overflow-y: scroll;*/
+}
+
+/*Search Page*/
+.cf_search{
+    width:600px;
+	margin: 0 auto;  
+}
+
+/*.cf_searchCategory{
+    width:170px;
+    height:170px;
+}*/
+
+.cf_searchCategory{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+}
+
+.cf_searchCategoryPercent{
+    width:25px;
+    height:25px;
+    border-radius:12.5px;
+    background-color:red;
+    top:50px;
+}
+
+.cf_searchPerCategory{
+    width:150px;
+    height:100px;
+    border-bottom:outset 1px black;
+    border-left:outset 1px black;
+    border-top:outset 1px #14e42e;
+    border-right:outset 1px #14e42e;
+    font-size:20px;
+    color:#00ff21;
+    line-height:75px;
+    text-align:center;
+    background:white;
+    opacity:0.8;
+}
+
+.cf_searchResultProject{
+    background-color:white;
+    border-radius:3px;
+}
+
+
+.cf_searchCategoryCircle:hover{
+    border-bottom:outset 2px #14e42e;
+    border-left:outset 2px #14e42e;
+    border-top:outset 2px black;
+    border-right:outset 2px black;
+}
+
+
+.cf_loginLink{
+    font-weight:bold;
+}
+.cf_signupHeaing{
+    font-weight:bold;
+    font-size:large;
+}
+
+/*User Profile page*/
+.cf_profileHeader{
+    background-color:#f1f5f6;
+}
+
+.wrapper, .cf_userProfileHover{
+    position:relative;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+.glyphicon-plus-sign {
+  position: absolute;
+  top: 65px;
+  left: 60px;
+  font-size:xx-large;
+  z-index:1;
+  color:#0094ff;
+}
+
+.hover-toggle {
+    display:none;
+}
+
